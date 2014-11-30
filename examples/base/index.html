@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular accordion</title>
+    <meta charset="utf-8">
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://code.angularjs.org/1.2.9/angular.min.js"></script>
+    <script src="../../angular-accordion.js"></script>
+    <script src="scripts.js"></script>
+    <style>
+        .panel-heading {cursor: pointer;}
+    </style>
+</head>
+<body ng-app="app">
+    <div ng-controller="AppController">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <h1>Angular accordion / Base example</h1>
+                    <br/>
+
+                    <ul class="list-group">
+                        <li ng-repeat="item in app.items track by item.id" class="list-group-item">
+
+                            <div class="panel panel-default">
+                                <div ng-click="app.accordion.toggleFold(item.id)" class="panel-heading">
+                                    <span ng-bind="item.title"></span>
+                                </div>
+                                <div ng-show="app.accordion.isExpandedFold(item.id)" class="panel-body">
+                                    <p>
+                                        <span ng-bind="item.id"></span>
+                                        <span ng-bind="item.title"></span>
+                                    </p>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

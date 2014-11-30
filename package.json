@@ -1,0 +1,24 @@
+{
+    "name": "angular-accordion",
+    "version": "0.1.0",
+    "homepage": "https://github.com/nervgh/angular-accordion",
+    "description": "Simple angular accordion",
+    "author": {
+        "name": "nerv",
+        "url": "https://github.com/nervgh"
+    },
+    "dependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-copy": "~0.4.1",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-concat": "~0.3.0",
+        "grunt-contrib-uglify": "~0.2.1",
+        "grunt-karma": "^0.9.0",
+        "karma": "^0.12.24",
+        "karma-jasmine": "^0.1.5",
+        "karma-chrome-launcher": "^0.1.5",
+        "karma-phantomjs-launcher": "^0.1.4",
+        "phantomjs": "^1.9.11",
+        "angular": ">=1.2.11"
+    }
+}

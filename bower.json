@@ -1,0 +1,25 @@
+{
+    "name": "angular-accordion",
+    "version": "0.1.0",
+    "main": "angular-accordion.js",
+    "homepage": "https://github.com/nervgh/angular-accordion",
+    "description": "Simple angular accordion",
+    "license": "MIT",
+    "author": {
+        "name": "nerv",
+        "url": "https://github.com/nervgh"
+    },
+    "ignore": [
+        "examples"
+    ],
+    "keywords": [
+        "js",
+        "javascript",
+        "angular",
+        "accordion"
+    ],
+    "dependencies": {
+        "es5-shim": ">=3.4.0",
+        "angular": ">=1.2.11"
+    }
+}
